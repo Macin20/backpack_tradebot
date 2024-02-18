@@ -143,9 +143,12 @@ const buyfun = async (client) => {
     }
 }
 
+
+// 在这里加入apikey和apisecret
+
 (async () => {
-    const apisecret = "";
-    const apikey = "";
+    const apisecret = "改成你自己的，从交易所获取";
+    const apikey = "改成你自己的，从交易所获取";
     const client = new backpack_client_1.BackpackClient(apisecret, apikey);
     init(client);
 })()
